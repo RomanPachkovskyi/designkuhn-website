@@ -1,0 +1,19 @@
+<%- include('./includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+            <div class="container custom-mt">
+                <div class="row mt-5 mb-5 text-center">
+                    <div class="col mt-5 mb-5">
+                        <h1 class="custom-h2">
+                            <%= coverTopic.pageTitle %>
+                                <%= status %>
+                        </h1>
+                        <p class="custom-p custom-mb">
+                            <%= message %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <%- include('./includes/footer.ejs') %>

@@ -1,0 +1,48 @@
+<section id="service">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mt-5">
+                <p class="custom-p-small fs-9 mt-5">SERVICES</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mt-5 mb-5 animated-text">
+                <h2 class="custom-h2 animated-text">
+                    <%= coverTopic.jobServ %>
+                </h2>
+            </div>
+        </div>
+        <div class="row align-items-center mt-5 mb-5">
+            <div class="col-12 col-xl-3 custom-mb-horeca text-center mx-auto">
+                <div class="elliptical-link-container">
+                    <div class="ellipse ellipse-horeca"></div>
+                    <h3 class="caps"><%- coverTopic.firstServ %></h2>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 custom-mb-horeca text-center mx-auto">
+                <div class="elliptical-link-container">
+                    <div class="ellipse ellipse-horeca"></div>
+                    <h3 class="caps"><%- coverTopic.secondServ %></h2>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 text-center mx-auto">
+                <div class="elliptical-link-container">
+                    <div class="ellipse ellipse-horeca"></div>
+                    <h3 class="caps"><%- coverTopic.thirdServ %></h2>
+                </div>
+            </div>
+        </div>
+        <% if (isMehr) { %>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 col-lg-4 pt-5">
+                    <h2 class="custom-h2-small caps">
+                        <%= translation.mehr %>
+                    </h2>
+                    <p class="custom-p-small">
+                        <%= coverTopic.mehrText %>
+                    </p>
+                </div>
+            </div>
+            <% } %>
+    </div>
+</section>

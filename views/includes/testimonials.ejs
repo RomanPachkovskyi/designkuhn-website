@@ -1,0 +1,158 @@
+<section id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mt-5">
+                <p class="custom-p-small mt-5 caps">
+                    <%= translation.bewertungen %>
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mx-auto text-center mt-5">
+                <h2 class="custom-h2 mb-5 animated-text">
+                    <%= translation.bewertungenTitle %>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div id="carouselTestimonials" class="carousel carousel-dark slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p class="custom-p">Я хочу выразить своб благодарность Оксане Кун за ее
+                                        работу, такое
+                                        внимание ко
+                                        всем пожеланиям и деталям! Я просто восхищена качеством своего нового платья.
+                                        Оно
+                                        идеально
+                                        садится по фигуре и очень элегантное. Спасибо большое!</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mt-1">
+                                    Olga in <cite title="facebook"><a href="http://"
+                                            class="link-dark link-underline link-underline-opacity-0 custom-underline"
+                                            target="_blank">facebook</a></cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p class="custom-p">Я хочу выразить своб благодарность Оксане Кун за ее
+                                        работу, такое
+                                        внимание ко
+                                        всем пожеланиям и деталям! Я просто восхищена качеством своего нового платья.
+                                        Оно
+                                        идеально
+                                        садится по фигуре и очень элегантное. Спасибо большое!</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mt-1">
+                                    Olga in <cite title="facebook"><a href="http://"
+                                            class="link-dark link-underline link-underline-opacity-0 custom-underline"
+                                            target="_blank">facebook</a></cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption carousel-caption-custom">
+                    <div class="container text-center">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-lg-8">
+                                <div class="text-center">
+                                    <div class="elliptical-link-container text-center">
+                                        <div class="ellipse ellipse-second"></div>
+                                        <div class="ellipse ellipse-btn" id="feedbackEllipse"></div>
+                                        <a href="#" id="feedbackGive" class="custom-p elliptical-link"
+                                            data-bs-toggle="modal" data-bs-target="#feedbackModal"><b>Feedback</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="40" viewBox="0 0 52 40" fill="none">
+                <path
+                    d="M2.38498e-07 20L52 20M52 20C34.6667 20 32.1905 12.5 32.1905 3.83868e-07M52 20C34.6667 20 32.1905 27.5 32.1905 40"
+                    stroke="#2C2C2C" transform="rotate(180, 26, 20)"></path>
+            </svg>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="40" viewBox="0 0 52 40" fill="none">
+                <path
+                    d="M2.38498e-07 20L52 20M52 20C34.6667 20 32.1905 12.5 32.1905 3.83868e-07M52 20C34.6667 20 32.1905 27.5 32.1905 40"
+                    stroke="#2C2C2C"></path>
+            </svg>
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="feedbackModalLabel">
+                        <%= translation.modalFeedbackTitle %>
+                    </h3><br>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19.4115 0.623047L0.730469 19.3042" stroke="#1C1C1C" stroke-width="0.5"
+                                stroke-miterlimit="10"></path>
+                            <path d="M0.587891 0.623047L19.3405 19.3757" stroke="#1C1C1C" stroke-width="0.5"
+                                stroke-miterlimit="10"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Form inside the modal -->
+                    <div id="errorFeedback"></div>
+                    <form class="custom-form-feedback" id="feedbackForm">
+                        <p class="custom-p-small">
+                            <%= translation.modalFeedbackSubTitle %>
+                        </p><br>
+                        <div class="form-group mb-3">
+                            <label class="form-label custom-p-small custom-bold" for="feedbackName">Name
+                                <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-input" id="feedbackName" name="feedbackName">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label custom-p-small custom-bold" for="feedbackLink">
+                                <%= translation.modalFeedbackLink %>
+                            </label>
+                            <input type="text" class="form-control custom-input" id="feedbackLink" name="feedbackLink">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label custom-p-small custom-bold" for="feedbackMessage">Feedback <span
+                                    class="text-danger">*</span></label>
+                            <textarea class="form-control custom-input mb-1" name="feedbackMessage" id="feedbackMessage"
+                                maxlength="250" oninput="updateCounter()" rows="3"></textarea>
+                            <div class="custom-p-small ms-1" id="counterFeedback">250/250</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-block btn-dark" style="font-family: MakLight;"
+                        id="submitFormFeedback">
+                        <span class="spinner-border spinner-border-sm d-none" id="spinnerFeedback"
+                            aria-hidden="true"></span>
+                        <%= translation.modalFeedbackSubmit %>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

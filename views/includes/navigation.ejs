@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-xl fixed-top" style="background-color: #fff;">
+    <div class="container-fluid">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewBox="0 0 26 7" fill="none">
+                <line opacity="0.8" y1="0.5" x2="26" y2="0.5" stroke="#2C2C2C"></line>
+                <line opacity="0.8" y1="6.5" x2="26" y2="6.5" stroke="#2C2C2C"></line>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="container-fluid">
+                <div class="row align-items-center caps text-nowrap">
+                    <div class="col-md-5 order-1 text-center">
+                        <ul class="navbar-nav justify-content-end">
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text" data-delay="0.3"
+                                    href="/horeca">
+                                    horeca
+                                </a>
+                            </li>
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text" data-delay="0.1"
+                                    href="/kleideranfertigung">
+                                    <%= translation.kleideranfertigung %>
+                                </a>
+                            </li>
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text" href="/heimtextilien">
+                                    <%= translation.heimtextilien %>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 order-3 order-md-2 text-center">
+                        <a class="navbar-brand me-0" href="/">
+                            <img class="img-fluid animate-image no-shadow" src="img/logo.png" alt="Design Kuhn"
+                                style="max-width: 100px;">
+                        </a>
+                    </div>
+                    <div class="col-md-5 order-2 order-md-3 text-center">
+                        <ul class="navbar-nav justify-content-start">
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text"
+                                    href="<% if (!portfolio) { %>/#portfolio<% } else { %>#portfolio<% } %>">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text" data-delay="0.1"
+                                    href="/myself">
+                                    <%= translation.about %>
+                                </a>
+                            </li>
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text" data-delay="0.3"
+                                    href="/kontakte">
+                                    <%= translation.kontakte %>
+                                </a>
+                            </li>
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text <%= (lang=='de'?'d-none':'d-block') %>"
+                                    data-delay="0.3" href="/set-de">DE</a>
+                            </li>
+                            <li class="nav-item d-inline-flex justify-content-center">
+                                <a class="nav-link custom-p-small custom-underline animated-text <%= (lang=='en'?'d-none':'d-block') %>"
+                                    data-delay="0.3" href="/set-en">EN</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

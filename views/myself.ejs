@@ -1,0 +1,70 @@
+<%- include('./includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+            <%- include('./includes/cover.ejs') %>
+                <section id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto text-center mt-5">
+                                <p class="custom-p-small mt-5 caps">
+                                    <%= translation.about %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-8 mx-auto text-center mt-5 mb-myself animated-text">
+                                <h2 class="custom-h2">
+                                    <%= coverTopic.title %>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-lg-7 col-xl-6 text-lg-start order-2 order-xl-1 mb-myself">
+                                <%- coverTopic.text1 %>
+                            </div>
+                            <div
+                                class="col-12 col-xl-6 order-1 order-xl-2 text-center d-flex align-items-center justify-content-center mb-myself">
+                                <div class="elliptical-link-container elliptical-link-container-big">
+                                    <div class="ellipse ellipse-big"></div>
+                                    <img class="rotate-15 img-fluid-big elliptical-link" src="img/me-big.jpg"
+                                        alt="Design Studio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div
+                                class="col-12 col-xl-6 text-center d-flex align-items-center justify-content-center mb-myself">
+                                <div class="elliptical-link-container elliptical-link-container-big">
+                                    <div class="ellipse ellipse-big"></div>
+                                    <img class="rotate-15 img-fluid-big elliptical-link" src="img/me-big.jpg"
+                                        alt="Design Studio">
+                                </div>
+                            </div>
+                            <div class="col-11 col-lg-7 col-xl-6 text-lg-start mb-myself">
+                                <%- coverTopic.text2 %>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-lg-7 col-xl-6 text-lg-start order-2 order-md-2 order-xl-1 mb-myself">
+                                <%- coverTopic.text3 %>
+                            </div>
+                            <div
+                                class="col-12 col-xl-6 order-1 order-xl-2 text-center d-flex align-items-center justify-content-center mb-myself">
+                                <div class="elliptical-link-container elliptical-link-container-big">
+                                    <div class="ellipse ellipse-big"></div>
+                                    <img class="rotate-15 img-fluid-big elliptical-link" src="img/me-big.jpg"
+                                        alt="Design Studio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <%- include('./includes/portfolio.ejs') %>
+                    <%- include('./includes/testimonials.ejs') %>
+                        <%- include('./includes/instagram.ejs') %>
+                            <%- include('./includes/contact.ejs') %>
+                                <%- include('./includes/footer.ejs') %>

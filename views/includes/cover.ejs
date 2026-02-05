@@ -1,0 +1,65 @@
+<section id="cover">
+    <div class="container mt-5 pt-5">
+        <!-- <div class="row">
+            <div class="col-12 col-sm-6 mx-auto text-center mt-5">
+                <div class="anim-container">
+                    <div class="text-container">
+                        <h2 class="custom-h2">Дизайн-студия Оксаны Кун с собственным ателье</h2>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-12 col-sm-6 mx-auto text-center mt-5">
+                <h2 class="custom-h2 animated-text">
+                    <%= coverTopic.coverTitle %>
+                </h2>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <% if (leftBlock) { %>
+                <div class="col-8 col-sm-6 col-xl-3 order-1 mb-3 ms-3 mb-sm-0 ms-sm-0 mx-auto text-center">
+                    <p class="custom-p">
+                        <%= coverTopic.leftText %>
+                    </p>
+                </div>
+                <% } %>
+                    <% if (rightBlock) { %>
+                        <div class="col-8 col-sm-6 col-xl-3 order-2 me-3 me-sm-0 order-xl-3 mx-auto text-center">
+                            <p class="custom-p">
+                                <%= coverTopic.rightText %>
+                            </p>
+                        </div>
+                        <% } %>
+                            <div class="col-9 col-sm-12 col-xl-3 order-3 order-xl-2 mt-5 mt-xl-0 mx-auto text-center">
+                                <div class="elliptical-link-container elliptical-link-container-big">
+                                    <div class="ellipse ellipse-big"></div>
+                                    <img class="rotate-15 img-fluid elliptical-link" style="max-width: 300px;"
+                                        src="<%= coverImage %>" alt="Design Studio">
+                                </div>
+                            </div>
+        </div>
+        <% if (buttonCover) { %>
+            <div class="row mt-5">
+                <div class="col mx-auto text-center mt-5">
+                    <div class="elliptical-link-container">
+                        <div class="ellipse ellipse-second"></div>
+                        <div class="ellipse ellipse-btn"></div>
+                        <a class="custom-p elliptical-link" href="#contact">
+                            <%- translation.buttonText %>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+                <% if(discount) { %>
+                    <div class="row">
+                        <div class="col mx-auto text-center mt-5">
+                            <p class="custom-p-small">
+                                <%= translation.rabbat %>
+                            </p>
+                        </div>
+                    </div>
+                    <% } %>
+    </div>
+</section>

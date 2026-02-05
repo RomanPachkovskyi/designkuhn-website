@@ -1,0 +1,93 @@
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mt-5">
+                <p class="custom-p-small mt-5 caps">
+                    <% if (sectionTitleContact) { %>
+                        <%= translation.kontakte %>
+                </p>
+                <% } %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mt-5">
+                <h2 class="custom-h2 mb-5 animated-text">
+                    <%= translation.contactTitle %>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 custom-mb">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-sm-6 col-lg-4 text-center text-sm-start">
+                <h3 class="custom-h2-small caps">
+                    <%= translation.tel %>
+                </h3>
+                <p class="custom-p-small">
+                    <%= translation.telStat %>: 05253 – 9738062 <br>
+                        <%= translation.telHandy %>: 01525 – 6544525
+                </p>
+                <br>
+                <h3 class="custom-h2-small">EMAIL</h3>
+                <p class="custom-p-small">info@designkuhn.de</p>
+                <br>
+                <h3 class="custom-h2-small caps">
+                    <%= translation.adress %>
+                </h3>
+                <p class="custom-p-small">Pyrmonter str. 20, 33014 Bad Driburg</p>
+                <p class="custom-p-small">
+                    <%= translation.die %> 9:00 - 12:00<br>
+                        <%= translation.don %> 9:00 - 12:00<br>
+                            <%= translation.termin %>
+                </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mt-5 mt-sm-0" id="contact-form">
+                <h3 class="custom-h2-small text-center text-sm-start mb-5 mb-sm-0 caps">
+                    <%- translation.contactTitle2 %>
+                </h3>
+                <div id="alertContact"></div>
+                <form class="custom-form" action="/send-email" method="POST" id="contactForm">
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label custom-p-small custom-bold">Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control custom-input" id="inputName" name="inputName"
+                            aria-describedby="nameHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label custom-p-small custom-bold">Email
+                            <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control custom-input" id="inputEmail" name="inputEmail" v
+                            aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTel" class="form-label custom-p-small custom-bold">
+                            <%= translation.tel %>
+                                <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" class="form-control custom-input" id="inputTel" name="inputTel"
+                            aria-describedby="telHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputKomm" class="form-label custom-p-small custom-bold">
+                            <%= translation.komm %>
+                        </label>
+                        <textarea type="text" class="form-control custom-input" id="inputKomm" name="inputKomm" rows="1"
+                            aria-describedby="kommHelp"></textarea>
+                    </div>
+                    <div class="text-center mt-5">
+                        <span class="spinner-border text-dark d-none" id="spinnerContact" aria-hidden="true"></span>
+                    </div>
+                    <div class="text-center" id="ellipseContactSend">
+                        <div class="elliptical-link-container text-center mt-5">
+                            <div class="ellipse ellipse-second"></div>
+                            <div class="ellipse ellipse-btn" id="submitFormBtn"></div>
+                            <a class="custom-p elliptical-link" id="submitFormLink" href="#contact-form"><b>
+                                    <%= translation.modalFeedbackSubmit %>
+                                </b></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

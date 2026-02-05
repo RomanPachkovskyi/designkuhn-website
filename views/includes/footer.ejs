@@ -1,0 +1,109 @@
+<footer>
+    <hr class="custom-line">
+    <div class="container mb-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-6 order-4 order-md-1 text-center text-md-start">
+                <div class="container">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <div>
+                            <a href="/">
+                                <img src="img/logo.png" class="no-shadow" style="width: 100px;" alt="Oksana Kuhn">
+                            </a>
+                        </div>
+                        <div class="flex-grow-0 flex-grow-md-1 pt-3 text-start">
+                            <div>
+                                <h3 class="custom-h2-small" style="margin-bottom: 0;">Oksana Kuhn</h3>
+                                <p class="custom-p-logo">&nbsp;textile & clothes design
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 order-1 order-md-2 text-center text-md-start mb-5 mb-md-0">
+                <p class="custom-bold custom-p-small">SERVICES</p><br>
+                <div class="link-footer">
+                    <a href="/heimtextilien"
+                        class="custom-p-small fs-6 link-dark link-underline link-underline-opacity-0 link-footer custom-underline">
+                        <%= translation.heimtextilien %>
+                    </a><br>
+                </div>
+                <div class="link-footer">
+                    <a href="/kleideranfertigung"
+                        class="custom-p-small fs-6 link-dark link-underline link-underline-opacity-0 custom-underline">
+                        <%= translation.kleideranfertigung %>
+                    </a><br>
+                </div>
+                <div class="link-footer">
+                    <a href="/horeca"
+                        class="custom-p-small fs-6 link-dark link-underline link-underline-opacity-0 custom-underline">HoReCa</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 order-2 order-md-3 text-center text-md-start mb-5 mb-md-0">
+                <p class="custom-bold custom-p-small caps">
+                    <%= translation.info %>
+                </p><br>
+                <div class="link-footer">
+                    <a href="/kontakte"
+                        class="custom-p-small fs-6 link-dark link-underline link-underline-opacity-0 link-footer custom-underline">
+                        <%= translation.kontakte %>
+                    </a><br>
+                </div>
+                <div class="link-footer">
+                    <a href="/myself"
+                        class="custom-p-small fs-6 link-dark link-underline link-underline-opacity-0 link-footer custom-underline">
+                        <%= translation.about %>
+                    </a><br>
+                </div>
+                <div class="link-footer">
+                    <a href="<% if (!portfolio) { %>/#portfolio<% } else { %>#portfolio<% } %>"
+                        class="custom-p-small fs-6 link-dark link-underline link-underline-opacity-0 link-footer custom-underline">Portfolio</a><br>
+                </div>
+                <div class="link-footer">
+                    <a href="https://www.instagram.com/designkuhn/"
+                        class="custom-p-small fs-6 link-dark link-underline link-underline-opacity-0 link-footer custom-underline"
+                        target="_blank">Instagram</a><br>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none text-center mb-4 order-3">
+                <a href="#top"
+                    class="custom-p-small link-dark link-underline link-underline-opacity-0 me-3 custom-underline">
+                    <%= translation.up %>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="31" viewBox="0 0 21 31" fill="none">
+                            <path
+                                d="M10.5 26L10.5 5M10.5 5C10.5 11.8571 7.6875 12.8367 3 12.8367M10.5 5C10.5 11.8571 13.3125 12.8367 18 12.8367"
+                                stroke="#5F5F5F"></path>
+                        </svg>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-9 text-center text-md-start">
+                <p class="custom-p-small copyright">© <%= new Date().getFullYear() %> Oksana Kuhn © All Rights
+                        Reserved
+                </p>
+            </div>
+            <div class="col d-none d-md-block">
+                <a href="#top"
+                    class="custom-p-small link-dark link-underline link-underline-opacity-0 me-3 custom-underline">
+                    <%= translation.up %>
+                </a>
+                <a href="#top" class="link-dark link-underline link-underline-opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="31" viewBox="0 0 21 31" fill="none">
+                        <path
+                            d="M10.5 26L10.5 5M10.5 5C10.5 11.8571 7.6875 12.8367 3 12.8367M10.5 5C10.5 11.8571 13.3125 12.8367 18 12.8367"
+                            stroke="#5F5F5F"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+<script src="/js/forms.js"></script>
+</body>
+
+</html>
