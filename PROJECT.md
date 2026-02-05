@@ -10,6 +10,8 @@
 - **Name:** designkuhnde_new
 - **Type:** Portfolio/Business website for a design studio
 - **Version:** 1.0.0
+- **Repository:** https://github.com/RomanPachkovskyi/designkuhn-website
+- **Hosting:** Vercel (serverless)
 
 ---
 
@@ -124,6 +126,12 @@ SMTP_PASS=<mailtrap password>
 - Custom font MAK used for headings
 - Bootstrap 5.3.3 loaded via CDN
 
+#### Git & Deployment Setup
+- Initialized Git repository
+- Created GitHub repo: `RomanPachkovskyi/designkuhn-website`
+- Added `vercel.json` for serverless deployment
+- Modified `app.js` for Vercel compatibility (conditional server start)
+
 ---
 
 ## Decisions
@@ -131,6 +139,8 @@ SMTP_PASS=<mailtrap password>
 | Date | Decision | Reasoning |
 |------|----------|-----------|
 | 2026-02-05 | Created PROJECT.md | Central documentation for project tracking |
+| 2026-02-05 | Use Vercel for hosting | User preference, serverless Express support |
+| 2026-02-05 | Branch name: main | Modern Git convention |
 
 ---
 
