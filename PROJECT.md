@@ -12,6 +12,7 @@
 - **Version:** 1.0.0
 - **Repository:** https://github.com/RomanPachkovskyi/designkuhn-website
 - **Hosting:** Vercel (serverless)
+- **Production URL:** https://designkuhn-website.vercel.app
 
 ---
 
@@ -131,6 +132,13 @@ SMTP_PASS=<mailtrap password>
 - Created GitHub repo: `RomanPachkovskyi/designkuhn-website`
 - Added `vercel.json` for serverless deployment
 - Modified `app.js` for Vercel compatibility (conditional server start)
+- Successfully deployed to Vercel: https://designkuhn-website.vercel.app
+
+#### Vercel Fixes Applied
+- Added `dotenv` initialization for environment variables
+- Explicitly set `views` directory path
+- Disabled in-memory rate limiter (incompatible with serverless)
+- Configured static file routing in vercel.json
 
 ---
 
