@@ -5,6 +5,20 @@
 
 ---
 
+## AI Session Rules
+
+| Trigger | Action |
+|---------|--------|
+| User says **"кінець"** or **"end"** | Stop local dev server, end session |
+| User says **"пауза"** or **"pause"** | Stop local dev server, save state |
+
+**Before ending session:**
+1. Stop any running local servers (`npm run dev`, `node app.js`)
+2. Commit and push uncommitted changes (if any)
+3. Update PROJECT.md changelog if significant work was done
+
+---
+
 ## Project Overview
 
 - **Name:** designkuhnde_new
