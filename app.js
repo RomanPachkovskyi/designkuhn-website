@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const i18n = require("i18n-express");
@@ -14,13 +15,17 @@ app.use(cookieParser());
 
 app.use(express.json());
 
-app.use(limiter);
+// Rate limiter disabled in Vercel serverless (requires external store)
+if (process.env.VERCEL !== '1') {
+  app.use(limiter);
+}
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
 
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 app.use(
   i18n({
