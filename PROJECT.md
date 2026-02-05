@@ -176,8 +176,24 @@ _No issues documented yet._
 - Blog/news section
 - Image gallery with filtering
 - Price calculator for services
-- Migration to TypeScript
-- Migration to Next.js for SSR/SSG
+
+---
+
+## Migration to Next.js
+
+**Status:** Planned (not started)
+**Document:** [docs/MIGRATION_NEXTJS.md](docs/MIGRATION_NEXTJS.md)
+
+A detailed migration plan has been prepared to transition from Express+EJS to Next.js+Tailwind. This would provide:
+- Better SEO (SSG/SSR)
+- TypeScript support
+- Faster page loads (~0.5-1s vs ~2-3s)
+- Easier content management
+- Modern React ecosystem
+
+**Estimated effort:** 5-6 hours (Claude Code + Codex)
+
+See full analysis, code examples, and phase breakdown in the migration document.
 
 ---
 
